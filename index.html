@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var url = 'https://grabify.link/WQ96D2';  // replace with your url
+var headers = {
+    'User-Agent': 'Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)'
+};
+var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+var finalUrl = proxyUrl + url;
+
+fetch(finalUrl, {headers: headers})
+.then(response => response.text())
+.then(data => {
+    console.log(data);
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
+</script>
+
+</body>
+</html>
